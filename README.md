@@ -12,6 +12,10 @@ docker pull jupyter/base-notebook:python-3.9.13
 ```shell
 docker build --tag ${DOCKER_USERNAME}/${APPLICATION_NAME}:$(VERSION) . # dot means currently directory
 ```
+- `--no-cache` 
+- if you just updated the requirements.txt
+- docker will use the cache to build the image
+- so you need to add `--no-cache` to force docker to rebuild the image
 
 ## Executing
 ```shell
