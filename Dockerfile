@@ -1,4 +1,4 @@
-FROM python:3.9.18-slim
+FROM jupyter/base-notebook:python-3.9.13
 
 # Set the working directory in the container
 WORKDIR /app
