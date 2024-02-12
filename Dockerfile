@@ -8,3 +8,5 @@ COPY requirements.txt requirements.txt
 
 # Install the required packages
 RUN pip install -r requirements.txt
+
+ENTRYPOINT ["jupyter", "lab","--ip=0.0.0.0","--allow-root"]
