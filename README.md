@@ -16,7 +16,7 @@ docker build --tag ${DOCKER_USERNAME}/${APPLICATION_NAME}:$(VERSION) . # dot mea
 In this version, when you run this Docker image, it will automatically launch Jupyterlab
 
 ```shell
-docker run -it --rm -v $(PWD):/app ${DOCKER_USERNAME}/${APPLICATION_NAME}:$(VERSION)
+docker run -p 8888:8888 -rm -v $(PWD):/app ${DOCKER_USERNAME}/${APPLICATION_NAME}:$(VERSION)
 ```
 
 ## Pushing the image to Docker Hub
