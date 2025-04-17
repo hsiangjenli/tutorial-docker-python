@@ -9,4 +9,4 @@ COPY requirements.txt requirements.txt
 # Install the required packages
 RUN pip install -r requirements.txt
 
-CMD ["jupyter", "lab","--ip=0.0.0.0","--allow-root"]
+CMD ["jupyter", "lab", "--ip=0.0.0.0", "--allow-root"]
